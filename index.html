@@ -7,7 +7,7 @@
         <title>Jugendhackt West - Github</title>
 
         <meta name="description" content="Einf&uuml;hrung in Github">
-        <meta name="author" content="Daniel Mies">
+        <meta name="author" content="dome">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -50,7 +50,7 @@
                     <h1>Github</h1>
                     <h3>Gemeinsam mit Code die Welt verbessern</h3>
                     <p>
-                        <small>Daniel Mies <a href="https://github.com/dmies">github.com/dmies</a></small>
+                        <small>dome &emsp;&mdash;&emsp; <a href="https://github.com/0x530302">github.com/0x0530302</a></small>
                     </p>
                 </section>
 
@@ -86,41 +86,39 @@
 
                 <section>
                     <h2>Was heißt Versionsverwaltung?</h2>
-                    <img class="none-border" data-src="images/versionierung.png">
+					<ul>
+						<li class="fragment">index.html</li>
+						<li class="fragment">index2.html</li>
+						<li class="fragment">index3.html</li>
+						<li class="fragment">index-test.html</li>
+						<li class="fragment">index-asdf.html</li>
+						<li class="fragment">...</li>
+					</ul>
                 </section>
 
-
                 <section>
-                  <h2>Installation</h2>
-
-                  <ul>
-                    <li><a href="https://git-scm.com/download/win">Windows</a></li>
-                    <li><a href="https://git-scm.com/download/mac">Max OSX</a></li>
-                    <li>Linux - Wie immer im Paket-Manager ;)</li>
-                  </ul>
+                    <h2>Was heißt Versionsverwaltung?</h2>
+                    <img class="none-border" data-src="images/versionierung.png">
                 </section>
 
                 <section>
                   <h2>Ein Repository erstellen</h2>
                   <p>
                     In dem Verzeichnis, welches Du mit git verwalten möchtest, <code class="shell" data-trim>git init</code> ausführen.
+                  <pre><code class="shell" data-trim>
+$ cd mein_verzeichnis
+$ git init
+                  </code></pre>
                   </p>
-
                 </section>
 
                 <section>
                   <h2>Ein Repository auschecken</h2>
                   <p>
-                    Du kannst ein Repository auschecken, welches in einem Ordner liegt
+				    Kopie auf den eigenen Rechner laden
                   </p>
                   <pre><code class="shell" data-trim>
-$ git clone /pfad/zum/repository
-                  </code></pre>
-                  <p>
-                    Oder ein Repository auch direkt auschecken
-                  </p>
-                  <pre><code class="shell" data-trim>
-$ git clone benutzername@host:/pfad/zum/repository
+$ git clone https://github.com/...
                   </code></pre>
                 </section>
 
@@ -133,7 +131,6 @@ $ git clone benutzername@host:/pfad/zum/repository
                     </p>
                     <pre><code class="shell" data-trim>
 $ git add meine-datei.txt
-$ git add *
                     </code></pre>
                   </div>
                   <div class="fragment">
@@ -173,7 +170,7 @@ $ git push origin master
 $ git pull
                   </code></pre>
                   <p class="fragment">
-                    Bevor ihr etwas pusht, solltet ihr immer vorher pullen. Sonst kann es zu Konflikten kommen.
+                    Bevor ihr etwas pusht, solltet ihr <u><b>immer</b></u> vorher pullen. Sonst kann es zu Konflikten kommen.
                   </p>
                 </section>
 
@@ -187,6 +184,98 @@ $ git pull
 $ git status
                     </code></pre>
 
+                </section>
+
+
+                <section>
+                    <h2>Tipps für GitHub</h2>
+                </section>
+
+                <section>
+                    <h2>Readme</h2>
+                    <p>
+                        Zeige was du machst und wie es bedient wird
+                    </p>
+
+                    <pre><code class="md" data-trim>
+# Das ist unser tolles Projekt
+
+Es kann Einhörner auf Regenbögen tanzen lassen.
+Wenn du es benutzen willst, dann mach das:
+
+* lade es dir runter
+* führe die Datei `program` aus
+
+Wenn ein Fehler kommt, dann schau mal [hier](http://hilfe.de)
+                    </code></pre>
+
+                    <p>
+                        <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">
+                            <small>Markdown Spickzettel</small>
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Issue Tracking</h2>
+                    <p>
+                        Fragen und Probleme zu einem Projekt einstellen.
+                    </p>
+
+					<a href="https://guides.github.com/features/issues/">
+						<img class="none-border" data-src="images/issue.png">
+					</a>
+                </section>
+
+                <section>
+                    <h2>Wähle eine Lizenz für dein Projekt</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>MIT Lizenz (Expat)</th>
+                            <th>GNU General Public License v2.0 (GPL)</th>
+                        </tr>
+                        <tr>
+                            <td>einsehen</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr>
+                            <td>verwenden</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr>
+                            <td>kopieren</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr>
+                            <td>verändern</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>copyleft</td>
+                            <td class="red-color">✗</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>
+                    <h2>Klingt cool! würde ich gerne ausprobieren</h2>
+
+                    <p>
+                        <a href="https://git-scm.com/download/win">Windows</a>
+                    </p>
+                    <p>
+                        <a href="https://git-scm.com/download/mac">Max OSX</a>
+                    </p>
+                    <p>
+                        Linux - Wie immer im Paket-Manager ;)
+                    </p>
                 </section>
 
                 <section>
@@ -205,7 +294,7 @@ $ git status
 
                 <section>
                     <h2>War mir zu schnell!</h2>
-                    <a href="https://github.com/dmies/git-talk">https://github.com/dmies/git-talk</a>
+                    <a href="https://github.com/0x530302/git-talk">https://github.com/0x530302/git-talk</a>
                 </section>
 
                 <section>
